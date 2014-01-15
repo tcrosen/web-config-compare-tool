@@ -1,0 +1,24 @@
+{
+  "name": "web-config-compare-tool",
+  "description": "Compare .NET Web.config files",
+  "version": "1.0.0",
+  "author": {
+    "name": "Terry Rosen",
+    "email": "tcrosen@gmail.com"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "homepage": "",
+  "contributors": [],
+  "dependencies": {
+    "should": "*",
+    "lodash": "*",
+    "xml2js": "*"
+  },
+  "main": "compare.js",
+  "engines": {
+    "node": ">= 0.4.x"
+  }
+}
