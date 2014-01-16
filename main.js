@@ -2,7 +2,7 @@ var compare = require('./compare');
 
 compare({ 
   path: 'examples\\', 
-  name: 'Config1.config' 
+  name: 'StagingWeb.config' 
 }, { 
   path: 'C:\\Terry\\Development\\Publish Tests\\MC\\', 
   name: 'Web.config' 

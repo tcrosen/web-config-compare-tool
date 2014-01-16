@@ -4,7 +4,7 @@ var fs = require('fs'),
   should = require('should'),
   _ = require('lodash'),
   args = process.argv,
-  logFile = 'compare.log',
+  logFile = '',
   
   // The original (master) file to compare against
 	file1 = {
@@ -79,10 +79,11 @@ function loadConfigs(done) {
   });
 };  
 
-module.exports = function(f1, f2) {
+module.exports = function(f1, f2, lf) {
 
 	_.assign(file1, f1);
 	_.assign(file2, f2);	
+	logFile = lf || 'compare.log';
 
 	fs.writeFileSync(logFile, '');
 	logMessage('***********************************************************************');
